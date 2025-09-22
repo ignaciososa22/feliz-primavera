@@ -2,8 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Flor & Cielo Estrellado</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Feliz Primavera 🌻</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     html, body {
       margin: 0;
@@ -27,24 +27,26 @@
 
     .mensaje {
       position: absolute;
-      top: 10%;
+      top: 8%;
       width: 100%;
       text-align: center;
       z-index: 2;
+      padding: 0 1em;
     }
 
     .mensaje h1 {
       color: #ffd700;
-      font-size: 48px;
+      font-size: 6vw; /* ajustable al ancho de pantalla */
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      margin: 0.4em 0;
     }
 
     .flor-central {
       position: absolute;
-      bottom: -900px;
+      bottom: -600px;
       left: 50%;
       transform: translateX(-50%) scale(0.6);
-      width: 1000px;
+      width: 80vw;
       height: auto;
       opacity: 0;
       animation: subirFlor 5s ease-out forwards;
@@ -61,7 +63,7 @@
         opacity: 1;
       }
       100% {
-        bottom: 200px; /* Llega antes de la mitad */
+        bottom: 18vh; /* lo suficientemente abajo para no tapar el texto */
         opacity: 1;
         transform: translateX(-50%) scale(1);
       }
@@ -72,11 +74,10 @@
   <canvas id="cielo"></canvas>
 
   <div class="mensaje">
-    <h1>Estas flores son para vos❤️</h1>
-    <h1>Feliz Primavera🌻</h1>
+    <h1>Estas flores son para vos ❤️</h1>
+    <h1>Feliz Primavera 🌻</h1>
   </div>
 
-  <!-- Flor central animada -->
   <img src="flores_amarillas.png" alt="Flores" class="flor-central" />
 
   <script src="script.js"></script>
