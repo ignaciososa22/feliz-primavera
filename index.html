@@ -43,26 +43,25 @@
       position: absolute;
       bottom: -800px;
       left: 50%;
-      transform: translateX(-50%) scale(1.2); /* Imagen más grande */
-      width: 600px;
+      transform: translateX(-50%) scale(0.6);
+      width: 750px;
       height: auto;
       opacity: 0;
       animation: subirFlor 5s ease-out forwards;
       z-index: 1;
-      filter: drop-shadow(0 0 20px rgba(255, 255, 0, 0.3)); /* Sombra suave */
     }
 
     @keyframes subirFlor {
       0% {
         bottom: -800px;
         opacity: 0;
-        transform: translateX(-50%) scale(0.8);
+        transform: translateX(-50%) scale(0.4);
       }
       60% {
         opacity: 1;
       }
       100% {
-        bottom: 180px; /* Llega a la mitad de la pantalla */
+        bottom: 250px; /* Llega antes de la mitad */
         opacity: 1;
         transform: translateX(-50%) scale(1);
       }
@@ -77,6 +76,7 @@
     <h1>Feliz Primavera🌻</h1>
   </div>
 
+  <!-- Flor central animada -->
   <img src="flores_amarillas.png" alt="Flores" class="flor-central" />
 
   <script src="script.js"></script>
